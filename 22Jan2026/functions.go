@@ -57,6 +57,24 @@ func main() {
 	fmt.Println(g()) // 1
 	fmt.Println(g()) // 2
 
+	j := 0
+	for j = 0; j < 3; j++ {
+		defer func(j int) {
+			fmt.Println("Deferred Call in Loop:", j)
+		}(j)
+	}
+	i := 0
+	for i = 0; i < 3; i++ {
+		defer func() {
+			fmt.Println("Deferred Call in Loop:", i)
+		}()
+	}
+	for k := 0; k < 3; k++ {
+		defer func() {
+			fmt.Println("Deferred Call in Loop:", k)
+		}()
+	}
+
 	// deferring function example
 	defer fmt.Println("Deferred Call 1")
 	defer fmt.Println("Deferred Call 2")

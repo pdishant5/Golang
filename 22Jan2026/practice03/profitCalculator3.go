@@ -1,6 +1,7 @@
 package main
 
 import (
+	"app/fileops"
 	"errors"
 	"fmt"
 	"os"
@@ -12,6 +13,7 @@ func main() {
 	var taxRate float64
 	var err error
 
+	fileops.WriteFloatToFile("dummy.txt", 644.0)
 input1:
 	PrintOutput("Enter your annual revenue: ")
 	revenue, err = TakeInput()
