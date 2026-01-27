@@ -26,7 +26,7 @@ func main() {
 		return
 	}
 
-	fmt.Println("Note saved successfully!")
+	// fmt.Println("Note saved successfully!")
 }
 
 func getNoteData() (string, string) {

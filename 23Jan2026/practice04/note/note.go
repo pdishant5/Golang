@@ -40,5 +40,12 @@ func (note Note) Save() error {
 		return err
 	}
 
-	return os.WriteFile(fileName, jsonData, 0644)
+	err = os.WriteFile(fileName, jsonData, 0644)
+
+	if err != nil {
+		return err
+	}
+
+	fmt.Println("Note saved successfully!")
+	return nil
 }
