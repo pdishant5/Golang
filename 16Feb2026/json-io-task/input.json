@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "name": "Alice",
+        "email": "alice@gmail.com",
+        "active": true,
+        "percentage": 95.67,
+        "grade": "A"
+    },
+    {
+        "id": 2,
+        "name": "Bob",
+        "email": "Bob@gmail.com",
+        "active": false,
+        "percentage": 59.5
+    },
+    {
+        "id": 3,
+        "name": "Charlie",
+        "email": "charlie@gmail.com",
+        "active": false,
+        "percentage": 72.3,
+        "grade": "B"
+    }
+]

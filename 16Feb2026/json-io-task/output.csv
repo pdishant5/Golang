@@ -1,0 +1,4 @@
+active,email,grade,id,name,percentage
+true,alice@gmail.com,A,1,Alice,95.67
+false,Bob@gmail.com,,2,Bob,59.5
+false,charlie@gmail.com,B,3,Charlie,72.3
